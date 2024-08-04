@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.nav h1 {
+    margin: 0;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav2 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.nav2 ul li {
+    margin-left: 20px;
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.signin {
+    background-color: #FF735C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    height: calc(100% - 100px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 55%;
+    height: 100%;
+    padding: 5vw 4vw;
+    box-sizing: border-box;
+}
+
+.left h2 {
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left span {
+    color: #FF735C;
+}
+
+.left p {
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+.explore-btn {
+    background-color: #FF735C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.right {
+    height: 100%;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .nav2 ul {
+        display: none;
+    }
+
+    .signin {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 5vw;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .left h2 {
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+
+    .left p {
+        font-size: 1.5em;
+    }
+
+    .right img {
+        max-width: 100%;
+        height: auto;
+    }
+}
